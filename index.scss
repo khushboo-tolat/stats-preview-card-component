@@ -1,0 +1,77 @@
+$bg_dark_blue: hsl(233, 47%, 7%);
+$card_bg_blue: hsl(244, 38%, 16%);
+$soft_violet: hsl(277, 64%, 61%);
+$white: hsl(0, 0%, 100%);
+$transparent_white: hsla(0, 0%, 100%, 0.75);
+
+
+@font-face {
+    font-family: "Lexend_Deca";
+    src: url(Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $bg_dark_blue;
+    font-family: "Lexend_Deca";
+}
+
+.main-section{
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20% 10%;
+
+    .first-section{
+        background-image: url(images/image-header-mobile.jpg)
+    }
+
+    .second-section{
+        background-color: $card_bg_blue;
+
+        .top-div{
+            .heading{
+                color: $white;
+
+                .heading-span{
+                    color: $soft_violet;
+                }
+            }
+
+            .content{
+                color: $transparent_white;
+            }
+        }
+
+        .bottom div{
+            .stats-heading{
+                color: $transparent_white;
+            }
+            
+            .stats{
+                color: $white;
+            }
+        }
+    }
+}
+
+.attribution { 
+    font-size: 11px;
+    font-weight: bold; 
+    text-align: center;
+    color: $white; 
+    
+    a { 
+        color: #F5B7B1; 
+    }
+}
+
+@media only screen and (min-width: 375px) {
+
+}
